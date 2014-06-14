@@ -32,42 +32,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="Miles" 
+            android:text="Kilometers to Miles" 
             android:onClick="handleClick" />
 
         <RadioButton
             android:id="@+id/radio1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kilometers"
+            android:text="Miles to Kilometers"
             android:onClick="handleClick" />
 
         <RadioButton
             android:id="@+id/radio2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Farenheit"
+            android:text="Celcius to Fahrenheit"
             android:onClick="handleClick" />
         
         <RadioButton
             android:id="@+id/radio3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Celcius"
+            android:text="Fahrenheit to Celcius"
             android:onClick="handleClick" />
         
         <RadioButton
             android:id="@+id/radio4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pounds"
+            android:text="Kilograms to Pounds"
             android:onClick="handleClick" />
                 
         <RadioButton
             android:id="@+id/radio5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kilograms"
+            android:text="Pounds to Kilograms"
             android:onClick="handleClick" />
         
         </RadioGroup>

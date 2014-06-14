@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
 		return String.valueOf(c);
 	}
 
-	public String ctoFernheit(double c) {
+	public String cToFahrenheit(double c) {
 		double f = c * 1.800 + 32;
 		return String.valueOf(f);
 	}
@@ -67,7 +67,7 @@ public class MainActivity extends Activity {
 			break;
 		case R.id.radio3:
 			if(checked)
-				txt.setText(cToFernhiet(distance));
+				txt.setText(cToFahrenheit(distance));
 			break;
 		case R.id.radio4:
 			if(checked)
