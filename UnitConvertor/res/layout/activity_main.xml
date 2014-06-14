@@ -19,119 +19,57 @@
         <requestFocus />
     </EditText>
 
-    <TabHost
-        android:id="@android:id/tabhost"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/Text1"
         android:layout_below="@+id/Text1"
-        android:layout_marginTop="37dp" >
+        android:layout_marginTop="20dp" >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Miles" 
+            android:onClick="handleClick" />
 
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-            </TabWidget>
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilometers"
+            android:onClick="handleClick" />
 
-            <FrameLayout
-                android:id="@android:id/tabcontent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <LinearLayout
-                    android:id="@+id/Distance"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-
-                    <RadioGroup
-                        android:id="@+id/radioGroup1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" >
-
-                        <RadioButton
-                            android:id="@+id/radio0"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:checked="true"
-                            android:text="Miles" 
-                            andriod:onClick="handleClick" />
-
-                        <RadioButton
-                            android:id="@+id/radio1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Kilometers"
-                            andriod:onClick="handleClick" />
-                            
-
-                    </RadioGroup>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/Temperature"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-                    
-                    <RadioGroup
-                        android:id="@+id/radioGroup2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" >
-
-                        <RadioButton
-                            android:id="@+id/radio0"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:checked="true"
-                            android:text="Farenheit"
-                            andriod:onClick="handleClick" />
-
-                        <RadioButton
-                            android:id="@+id/radio1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Celisus"
-                            andriod:onClick="handleClick" />
-
-                    </RadioGroup>
-                    
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/Weight"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-                    
-                    <RadioGroup
-                        android:id="@+id/radioGroup1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" >
-
-                        <RadioButton
-                            android:id="@+id/radio0"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:checked="true"
-                            android:text="Pounds"
-                            andriod:onClick="handleClick" />
-
-                        <RadioButton
-                            android:id="@+id/radio1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Kilograms"
-                            andriod:onClick="handleClick" />
-
-                    </RadioGroup>
-                    
-                </LinearLayout>
-            </FrameLayout>
-        </LinearLayout>
-    </TabHost>
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farenheit"
+            android:onClick="handleClick" />
+        
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celcius"
+            android:onClick="handleClick" />
+        
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pounds"
+            android:onClick="handleClick" />
+                
+        <RadioButton
+            android:id="@+id/radio5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilograms"
+            android:onClick="handleClick" />
+        
+        </RadioGroup>
 
 </RelativeLayout>
