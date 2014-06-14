@@ -5,7 +5,7 @@
     tools:context="${packageName}.${activityClass}" >
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/Text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -23,8 +23,8 @@
         android:id="@android:id/tabhost"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/Text1"
+        android:layout_below="@+id/Text1"
         android:layout_marginTop="37dp" >
 
         <LinearLayout
@@ -58,13 +58,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:checked="true"
-                            android:text="Miles" />
+                            android:text="Miles" 
+                            andriod:onClick="handleClick" />
 
                         <RadioButton
                             android:id="@+id/radio1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Kilometers" />
+                            android:text="Kilometers"
+                            andriod:onClick="handleClick" />
+                            
 
                     </RadioGroup>
 
@@ -85,13 +88,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:checked="true"
-                            android:text="Farenheit" />
+                            android:text="Farenheit"
+                            andriod:onClick="handleClick" />
 
                         <RadioButton
                             android:id="@+id/radio1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Celisus" />
+                            android:text="Celisus"
+                            andriod:onClick="handleClick" />
 
                     </RadioGroup>
                     
@@ -112,13 +117,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:checked="true"
-                            android:text="Pounds" />
+                            android:text="Pounds"
+                            andriod:onClick="handleClick" />
 
                         <RadioButton
                             android:id="@+id/radio1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Kilograms" />
+                            android:text="Kilograms"
+                            andriod:onClick="handleClick" />
 
                     </RadioGroup>
                     
